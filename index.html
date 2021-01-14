@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NY Times Article Project</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron bg-success">
+        <h1 class="display-4 text-center">NY Times Search</h1>
+        <p class="lead text-center">A simple parser for NY Times articles</p>
+        <hr class="my-4" />
+        <p class="lead text-center">
+          Search keywords that you would like to see the top articles for.
+        </p>
+      </div>
+      <hr>
+      <div class="card">
+        <div class="card-header">Search Parameters</div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Search Term</label>
+              <input
+                type="text"
+                class="form-control"
+                id="search-keywords" 
+                placeholder="Your keywords"
+              />
+              
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1"
+                >Number of records to retrieve</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="number-of-records"
+                placeholder="How many?"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Start Year (optional)</label>
+              <input
+                type="text"
+                class="form-control"
+                id="start-year"
+                placeholder="From what year?"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">End Year (optional)</label>
+              <input
+                type="text"
+                class="form-control"
+                id="end-year"
+                placeholder="To what year?"
+              />
+            </div>
+            <div>
+              <button id="searchBtn" class="btn-lg btn-primary">
+                <i class="fa fa-search"></i><span> Search</span>
+            </button>
+                <button id="resetBtn" class="btn-lg btn-danger">
+                    <i class="fa fa-power-off"></i> <span> Reset</span>
+                </button>
+              
+            </div>
+          </form>
+        </div>
+      </div>
+<hr>
+      <div class="card">
+        <div class="card-header">
+            <i class="fa fa-calendar"></i><span> Top Articles</span>
+        </div>
+
+        <div class="card-body">
+            
+         </div>
+    </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        var searchBtn = $("#searchBtn")
+        var resetBtn = $("#resetBtn")
+        searchBtn.on("click", function(event){
+            event.preventDefault();
+            
+        })
+
+        resetBtn.on("click", function(event){
+            event.preventDefault();
+            
+        })
+
+       
+    </script>
+  </body>
+</html>
